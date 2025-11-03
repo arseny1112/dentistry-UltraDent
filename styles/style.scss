@@ -121,11 +121,15 @@ a {
 
           @media (max-width: 483px) {
             height: 628px;
-          }
-
-          @media (max-width: 425px) {
-                   height: 593px;
-          }
+            
+            @media (max-width: 425px) {
+          background-image: url("../imgs/hero-bg-mobile.png");
+                  height: 794px;
+      z-index: 1;
+      background-size: cover;
+          // height: 593px;
+        }
+      }
         }
       }
     }

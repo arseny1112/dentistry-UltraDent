@@ -126,9 +126,12 @@ a {
     height: 628px;
   }
 }
-@media (max-width: 1450px) and (max-width: 1109px) and (max-width: 781px) and (max-width: 425px) {
+@media (max-width: 1450px) and (max-width: 1109px) and (max-width: 781px) and (max-width: 483px) and (max-width: 425px) {
   .header::after {
-    height: 593px;
+    background-image: url("../imgs/hero-bg-mobile.png");
+    height: 794px;
+    z-index: 1;
+    background-size: cover;
   }
 }
 .header > * {
