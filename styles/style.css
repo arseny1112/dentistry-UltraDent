@@ -75,7 +75,7 @@ a {
 }
 @media (max-width: 1450px) and (max-width: 1017px) and (max-width: 781px) {
   .header {
-    height: 917px;
+    height: 939px;
   }
 }
 @media (max-width: 1450px) and (max-width: 1017px) and (max-width: 781px) and (max-width: 716px) {
@@ -91,6 +91,22 @@ a {
 @media (max-width: 1450px) and (max-width: 1017px) and (max-width: 781px) and (max-width: 483px) {
   .header {
     height: 761px;
+  }
+}
+.header__info-btn-3 {
+  color: white;
+  cursor: pointer;
+  display: none;
+  background-color: #ff7700;
+  border-radius: 8px;
+  font-size: 16px;
+  padding: 10px 32px;
+  border: none;
+  transition: background-color 0.2s ease-in-out;
+}
+@media (max-width: 777px) {
+  .header__info-btn-3 {
+    display: flex;
   }
 }
 .header::after {
@@ -118,18 +134,18 @@ a {
 }
 @media (max-width: 1450px) and (max-width: 1109px) and (max-width: 781px) {
   .header::after {
-    height: 841px;
+    height: 882px;
   }
 }
 @media (max-width: 1450px) and (max-width: 1109px) and (max-width: 781px) and (max-width: 483px) {
   .header::after {
-    height: 628px;
+    height: 666px;
   }
 }
 @media (max-width: 1450px) and (max-width: 1109px) and (max-width: 781px) and (max-width: 483px) and (max-width: 425px) {
   .header::after {
     background-image: url("../imgs/hero-bg-mobile.png");
-    height: 794px;
+    height: 844px;
     z-index: 1;
     background-size: cover;
   }
@@ -159,6 +175,7 @@ a {
   .header__inner {
     flex-direction: column;
     gap: unset;
+    margin-bottom: 70px;
   }
 }
 @media (max-width: 517px) {
@@ -169,6 +186,12 @@ a {
 .header__element {
   display: flex;
   gap: 30px;
+}
+@media (max-width: 1461px) {
+  .header__element {
+    justify-content: space-between;
+    width: 100%;
+  }
 }
 @media (max-width: 1109px) {
   .header__element {
@@ -204,6 +227,14 @@ a {
   display: flex;
   align-items: center;
 }
+@media (max-width: 1461px) {
+  .header .header__info {
+    width: 100%;
+  }
+  .header .header__info svg {
+    margin-left: auto;
+  }
+}
 @media (max-width: 1109px) {
   .header .header__info svg {
     display: none;
@@ -222,6 +253,21 @@ a {
 .header .header__info div span:first-child {
   font-family: "Inter-ExtraBold";
 }
+@media (max-width: 777px) {
+  .header .header__info .header__info-btn-1 {
+    display: none;
+  }
+}
+.header .header__info__info-btn-3 {
+  color: white;
+  cursor: pointer;
+  background-color: #ff7700;
+  border-radius: 8px;
+  font-size: 16px;
+  padding: 10px 32px;
+  border: none;
+  transition: background-color 0.2s ease-in-out;
+}
 .header .header__info .header__info-btn {
   margin-left: 68px;
   color: white;
@@ -233,17 +279,16 @@ a {
   border: none;
   transition: background-color 0.2s ease-in-out;
 }
+@media (max-width: 1461px) {
+  .header .header__info .header__info-btn {
+    margin-left: auto;
+  }
+}
 @media (max-width: 1109px) {
   .header .header__info .header__info-btn {
     margin-left: unset;
     padding: 10px 118px;
     margin-bottom: 22px;
-  }
-}
-@media (max-width: 1109px) and (max-width: 422px) {
-  .header .header__info .header__info-btn {
-    margin-left: unset;
-    padding: 10px 105px;
   }
 }
 .header .header__info .header__info-btn:hover {
@@ -267,6 +312,11 @@ a {
   padding: 12px 26px;
   border-radius: 8px;
   transition: background-color 0.3s ease-in-out;
+}
+@media (max-width: 1461px) {
+  .header__burger {
+    width: 117px;
+  }
 }
 .header__burger:hover {
   background-color: rgb(255, 163, 83);
@@ -296,11 +346,26 @@ a {
   border-radius: 34px;
   transition: all 0.3s ease;
 }
+@media (max-width: 1461px) {
+  .header__burger span {
+    margin-left: 25px;
+  }
+}
 .header__burger span:nth-child(1) {
   margin-left: 6px;
 }
+@media (max-width: 1461px) {
+  .header__burger span:nth-child(1) {
+    margin-left: 32px;
+  }
+}
 .header__burger span:nth-child(2) {
   margin-left: 3px;
+}
+@media (max-width: 1461px) {
+  .header__burger span:nth-child(2) {
+    margin-left: 29px;
+  }
 }
 .header__burger.active span:nth-child(1) {
   transform: rotate(45deg) translateY(12px);
@@ -642,17 +707,20 @@ a {
   .hero__title:first-of-type {
     margin-bottom: -1px;
     margin-left: 1px;
+    z-index: 0;
   }
 }
 .hero__title:nth-of-type(2) {
   margin-left: -61px;
   margin-bottom: -9px;
+  z-index: 0;
   transform: rotate(2deg);
 }
 .hero__title:nth-of-type(3) {
   transform: rotate(2deg);
   background-color: #f5cf77;
   border-radius: 32px;
+  z-index: 0;
   margin-left: 223px;
 }
 @media (max-width: 425px) {
