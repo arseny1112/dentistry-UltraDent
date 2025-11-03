@@ -318,14 +318,29 @@ a {
     width: 117px;
   }
 }
+@media (max-width: 1461px) and (max-width: 461px) {
+  .header__burger {
+    width: 27px;
+  }
+}
 .header__burger:hover {
   background-color: rgb(255, 163, 83);
 }
 .header__burger:hover span:nth-child(1) {
-  margin-left: 0;
+  margin-left: 25px;
+}
+@media (max-width: 461px) {
+  .header__burger:hover span:nth-child(1) {
+    margin-left: -5px;
+  }
 }
 .header__burger:hover span:nth-child(2) {
-  margin-left: 0;
+  margin-left: 25px;
+}
+@media (max-width: 461px) {
+  .header__burger:hover span:nth-child(2) {
+    margin-left: -6px;
+  }
 }
 .header__burger:focus {
   background-color: rgb(228, 106, 0);
@@ -351,12 +366,22 @@ a {
     margin-left: 25px;
   }
 }
+@media (max-width: 461px) {
+  .header__burger span {
+    margin-left: -6px;
+  }
+}
 .header__burger span:nth-child(1) {
   margin-left: 6px;
 }
 @media (max-width: 1461px) {
   .header__burger span:nth-child(1) {
     margin-left: 32px;
+  }
+}
+@media (max-width: 1461px) and (max-width: 461px) {
+  .header__burger span:nth-child(1) {
+    margin-left: 0px;
   }
 }
 .header__burger span:nth-child(2) {
@@ -367,16 +392,31 @@ a {
     margin-left: 29px;
   }
 }
+@media (max-width: 1461px) and (max-width: 461px) {
+  .header__burger span:nth-child(2) {
+    margin-left: -3px;
+  }
+}
 .header__burger.active span:nth-child(1) {
   transform: rotate(45deg) translateY(12px);
-  margin-left: 8px;
+  margin-left: 34px;
+}
+@media (max-width: 461px) {
+  .header__burger.active span:nth-child(1) {
+    margin-left: 9px;
+  }
 }
 .header__burger.active span:nth-child(2) {
   opacity: 0;
 }
 .header__burger.active span:nth-child(3) {
   transform: rotate(-45deg) translateY(-11px);
-  margin-left: 6px;
+  margin-left: 33px;
+}
+@media (max-width: 461px) {
+  .header__burger.active span:nth-child(3) {
+    margin-left: 7px;
+  }
 }
 @media (max-width: 1461px) {
   .header__burger {
@@ -451,7 +491,7 @@ a {
     border-radius: 8px;
     width: 361px;
     top: -28px;
-    left: -25px;
+    left: -551px;
     background: #fff;
     padding: 14px 8px 8px 8px;
     background-color: #eff1f3;
