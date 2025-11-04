@@ -242,9 +242,10 @@ a {
 
     @media(max-width: 1461px){
           width: 100%;
+           
 
           svg{
-                margin-left: auto;
+              margin-left: 0;
           }
 
           @media(max-width: 1109px){
@@ -255,7 +256,7 @@ a {
     svg {
       @media (max-width: 1109px) {
         display: none;
-        margin-left: 0;
+       
       }
     }
 

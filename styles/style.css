@@ -249,7 +249,7 @@ a {
     width: 100%;
   }
   .header .header__info svg {
-    margin-left: auto;
+    margin-left: 0;
   }
 }
 @media (max-width: 1461px) and (max-width: 1109px) {
@@ -260,7 +260,6 @@ a {
 @media (max-width: 1109px) {
   .header .header__info svg {
     display: none;
-    margin-left: 0;
   }
 }
 .header .header__info div {
