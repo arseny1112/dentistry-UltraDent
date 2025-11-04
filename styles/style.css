@@ -109,6 +109,13 @@ a {
     display: flex;
   }
 }
+@media (max-width: 777px) and (max-width: 400px) {
+  .header__info-btn-3 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+}
 .header::after {
   content: "";
   position: absolute;
@@ -145,7 +152,7 @@ a {
 @media (max-width: 1450px) and (max-width: 1109px) and (max-width: 781px) and (max-width: 483px) and (max-width: 425px) {
   .header::after {
     background-image: url("../imgs/hero-bg-mobile.png");
-    height: 844px;
+    height: 795px;
     z-index: 1;
     background-size: cover;
   }
@@ -175,12 +182,16 @@ a {
   .header__inner {
     flex-direction: column;
     gap: unset;
-    margin-bottom: 70px;
   }
 }
 @media (max-width: 517px) {
   .header__inner {
     padding: 0;
+  }
+}
+@media (max-width: 517px) and (max-width: 400px) {
+  .header__inner {
+    margin-bottom: 22px;
   }
 }
 .header__element {
@@ -197,7 +208,13 @@ a {
   .header__element {
     justify-content: space-between;
     width: 100%;
+    margin-bottom: 70px;
     margin-bottom: 10px;
+  }
+}
+@media (max-width: 1109px) and (max-width: 425px) {
+  .header__element {
+    margin-bottom: 14px;
   }
 }
 .header .nav {
@@ -235,9 +252,15 @@ a {
     margin-left: auto;
   }
 }
+@media (max-width: 1461px) and (max-width: 1109px) {
+  .header .header__info {
+    justify-content: center;
+  }
+}
 @media (max-width: 1109px) {
   .header .header__info svg {
     display: none;
+    margin-left: 0;
   }
 }
 .header .header__info div {
@@ -315,12 +338,14 @@ a {
 }
 @media (max-width: 1461px) {
   .header__burger {
-    width: 117px;
+    max-width: 79px;
+    width: 100%;
   }
 }
 @media (max-width: 1461px) and (max-width: 461px) {
   .header__burger {
-    width: 27px;
+    max-width: 27px;
+    height: 14px;
   }
 }
 .header__burger:hover {
@@ -403,7 +428,7 @@ a {
 }
 @media (max-width: 461px) {
   .header__burger.active span:nth-child(1) {
-    margin-left: 9px;
+    margin-left: 2px;
   }
 }
 .header__burger.active span:nth-child(2) {
@@ -415,7 +440,7 @@ a {
 }
 @media (max-width: 461px) {
   .header__burger.active span:nth-child(3) {
-    margin-left: 7px;
+    margin-left: 5px;
   }
 }
 @media (max-width: 1461px) {
@@ -570,7 +595,7 @@ a {
 }
 @media (max-width: 1109px) {
   .hero__btn {
-    z-index: 3;
+    z-index: 45453;
     bottom: -448px;
     left: 38%;
   }
@@ -1006,6 +1031,11 @@ a {
 }
 .hero__awards .award:nth-child(3) p {
   margin-left: 140px;
+}
+@media (max-width: 464px) {
+  .hero__awards .award:nth-child(3) p {
+    margin-left: 0;
+  }
 }
 @media (max-width: 1868px) {
   .hero__awards .award:nth-child(3) {

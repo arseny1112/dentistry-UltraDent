@@ -109,6 +109,12 @@ a {
 
     @media(max-width: 777px){
       display: flex;
+
+      @media(max-width: 400px){
+      display: flex;
+      width: 100%;
+      justify-content: center;
+    }
     }
   }
 
@@ -140,7 +146,7 @@ a {
             
             @media (max-width: 425px) {
           background-image: url("../imgs/hero-bg-mobile.png");
-                height: 844px;
+                        height: 795px;
       z-index: 1;
       background-size: cover;
         }
@@ -172,12 +178,17 @@ a {
     @media (max-width: 1109px) {
       flex-direction: column;
       gap: unset;
-      margin-bottom: 70px;
     }
 
     @media (max-width: 517px) {
       padding: 0;
+
+      @media (max-width: 400px) {
+     margin-bottom: 22px;
     }
+    }
+
+    
   }
 
   &__element {
@@ -192,7 +203,12 @@ a {
     @media (max-width: 1109px) {
       justify-content: space-between;
       width: 100%;
+          margin-bottom: 70px;
       margin-bottom: 10px;
+
+      @media(max-width: 425px){
+                margin-bottom: 14px;
+      }
     }
   }
 
@@ -230,11 +246,16 @@ a {
           svg{
                 margin-left: auto;
           }
+
+          @media(max-width: 1109px){
+             justify-content: center;
+          }
     }
 
     svg {
       @media (max-width: 1109px) {
         display: none;
+        margin-left: 0;
       }
     }
 
@@ -289,6 +310,7 @@ a {
         margin-left: unset;
         padding: 10px 118px;
         margin-bottom: 22px;
+       
 
       }
         
@@ -319,10 +341,12 @@ a {
     transition: background-color 0.3s ease-in-out;
 
     @media(max-width: 1461px){
-          width: 117px;
+                  max-width: 79px;
+        width: 100%;
 
           @media(max-width: 461px){
-                    width: 27px;
+                    max-width: 27px;
+                        height: 14px;
           }
     }
 
@@ -405,11 +429,11 @@ a {
 
     &.active {
       span:nth-child(1) {
-        transform: rotate(45deg) translateY(12px);
+           transform: rotate(45deg) translateY(12px);
               margin-left: 34px;
 
            @media(max-width: 461px){
-                    margin-left: 9px;
+                            margin-left: 2px;
 
           }
       }
@@ -420,7 +444,7 @@ a {
         transform: rotate(-45deg) translateY(-11px);
                margin-left: 33px;
         @media(max-width: 461px){
-              margin-left: 7px;
+              margin-left: 5px;
         }
         
       }
@@ -576,7 +600,7 @@ a {
     transition: background-color 0.3s ease-in-out;
 
     @media (max-width: 1109px) {
-      z-index: 3;
+      z-index: 45453;
       bottom: -448px;
       left: 38%;
 
@@ -984,8 +1008,14 @@ a {
     left: 49%;
       transform: rotate(-2deg);
 
+     
+
       p {
         margin-left: 140px;
+
+        @media(max-width: 464px){
+          margin-left: 0;
+      }
       }
 
       @media (max-width: 1868px) {
