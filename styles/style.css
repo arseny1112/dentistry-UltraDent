@@ -146,7 +146,7 @@ a {
 }
 @media (max-width: 1450px) and (max-width: 1109px) and (max-width: 781px) and (max-width: 483px) {
   .header::after {
-    height: 666px;
+    height: 587px;
   }
 }
 @media (max-width: 1450px) and (max-width: 1109px) and (max-width: 781px) and (max-width: 483px) and (max-width: 425px) {
@@ -549,12 +549,13 @@ a {
 }
 /* Hero Section */
 .hero {
-  padding: 60px 0;
+  padding: 60px 0 60px 0;
   position: relative;
 }
 @media (max-width: 1109px) {
   .hero {
     padding-top: 22px;
+    padding: 60px 0 60px 0;
   }
 }
 @media (max-width: 1109px) and (max-width: 483px) {

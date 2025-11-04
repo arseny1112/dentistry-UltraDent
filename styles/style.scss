@@ -142,7 +142,7 @@ a {
                  height: 882px;
 
           @media (max-width: 483px) {
-                    height: 666px;
+                           height: 587px;
             
             @media (max-width: 425px) {
           background-image: url("../imgs/hero-bg-mobile.png");
@@ -560,12 +560,13 @@ a {
 
 /* Hero Section */
 .hero { 
-  padding: 60px 0;
+  padding: 60px 0 60px 0;
   position: relative;
   
 
   @media (max-width: 1109px) {
     padding-top: 22px;
+     padding: 60px 0 60px 0;
 
     @media (max-width: 483px) {
       padding: 0;
